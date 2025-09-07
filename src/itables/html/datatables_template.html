@@ -2,6 +2,8 @@
 <link href="https://unpkg.com/dt_for_itables/dt_bundle.css" rel="stylesheet">
 <script type="module">
     import {DataTable, jQuery as $} from 'https://unpkg.com/dt_for_itables/dt_bundle.js';
+    // MODIFIED FOR THESIS
+    // Expose dt_DT object to be accesible from other scripts (this will allow to query filters, used later to create sub-sets)
 	let dt_DT;
     document.querySelectorAll("#table_id:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
