@@ -17,6 +17,9 @@
         dt_args["data"] = data;
 
         // [pre-dt-code]
+        // MODIFIED FOR THESIS
+        // Expose dt_DT object to be accesible from other scripts (this will allow to query filters, used later to create sub-sets)
+        // new DataTable(table, dt_args);
         window.dt_DT = new DataTable(table, dt_args);
     });
 </script>
